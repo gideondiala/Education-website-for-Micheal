@@ -1,0 +1,58 @@
+/* CSS CUSTOM PROPERTIES */
+:root {
+    --color-primary: #1A2B4A;
+    /* deep navy */
+    --color-accent: #D4A843;
+    /* gold */
+    --color-light: #F0F4F8;
+    --font-heading: 'Nunito', sans-serif;
+    --font-body: 'Open Sans', sans-serif;
+    --radius-sm: 4px;
+    --radius-md: 8px;
+    --radius-lg: 12px;
+    --shadow-sm: 0 2px 8px rgba(0, 0, 0, 0.1);
+    --shadow-md: 0 4px 16px rgba(0, 0, 0, 0.15);
+    --shadow-lg: 0 8px 24px rgba(0, 0, 0, 0.2);
+    --transition: all 0.3s ease;
+}
+
+/* GLOBAL STYLES */
+body {
+    font-family: var(--font-body);
+}
+
+.lb-heading {
+    font-family: var(--font-heading);
+}
+
+/* NAVBAR STYLES */
+.lb-navbar {
+    background: white;
+    box-shadow: 0 2px 10px rgba(26, 43, 74, 0.08);
+}
+
+.text-accent {
+    color: var(--color-accent);
+}
+
+.btn-accent {
+    background: var(--color-accent);
+    color: var(--color-primary);
+    font-weight: 700;
+    border: none;
+    padding: 10px 24px;
+    border-radius: 6px;
+}
+
+/* RESPONSIVE VIDEO EMBED */
+.video-wrapper {
+    position: relative;
+    aspect-ratio: 16 / 9;
+    /* maintains 16:9 at any width */
+    border-radius: var(--radius-md);
+    overflow: hidden;
+    box-shadow: var(--shadow-md);
+}
+
+
+Assignment 1 ends here
