@@ -56,3 +56,105 @@ body {
 
 
 Assignment 1 ends here
+
+Class Task 2 begins here
+
+.video-wrapper iframe {
+    position: absolute;
+    inset: 0;
+    width: 100%;
+    height: 100%;
+    border: none;
+}
+
+/* For older browsers without aspect-ratio support: */
+/* Use padding-top: 56.25%; instead of aspect-ratio */
+/* 56.25% = 9/16 × 100 = maintains 16:9 ratio */
+
+/* FEATURE CARDS */
+.feature-card {
+    background: white;
+    border-radius: var(--radius-md);
+    box-shadow: var(--shadow-sm);
+    transition: var(--transition);
+    height: 100%;
+}
+
+.feature-card:hover {
+    transform: translateY(-4px);
+    box-shadow: var(--shadow-md);
+}
+
+.feature-icon {
+    width: 64px;
+    height: 64px;
+    background: rgba(212, 168, 67, 0.12);
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin: 0 auto;
+}
+
+/* COURSE CARDS */
+.course-card {
+    transition: var(--transition);
+    border: none;
+    box-shadow: var(--shadow-sm);
+}
+
+.course-card:hover {
+    transform: translateY(-6px);
+    box-shadow: var(--shadow-md);
+}
+
+.course-card__img-wrap {
+    overflow: hidden;
+    height: 200px;
+    position: relative;
+}
+
+.course-card__img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    transition: transform 0.4s ease;
+}
+
+.course-card:hover .course-card__img {
+    transform: scale(1.05);
+}
+
+.course-level-badge {
+    position: absolute;
+    top: 10px;
+    right: 10px;
+    background: var(--color-accent);
+    color: var(--color-primary);
+    font-weight: 600;
+    padding: 4px 12px;
+    border-radius: 4px;
+}
+
+/* MISSION SECTION */
+.mission-section {
+    background: url('../images/classroom-bg.jpg') center/cover no-repeat;
+    position: relative;
+}
+
+.mission-overlay {
+    background: rgba(26, 43, 74, 0.82);
+    /* navy 82% opacity */
+    width: 100%;
+}
+
+/* TEAM SECTION */
+.team-photo {
+    width: 120px;
+    height: 120px;
+    border-radius: 50%;
+    object-fit: cover;
+    border: 3px solid var(--color-accent);
+    display: block;
+    margin: 0 auto;
+}
